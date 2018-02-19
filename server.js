@@ -5,20 +5,33 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne= {
-    title: 'article one',
-    heading: 'article one',
-    date: 'sep-5-2018',
-    content:`<p>
-                this is thw content for mt first article   this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article
-            </p>
-            <p>
-                this is thw content for mt first article   this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article
-            </p>
-            <p>
-                this is thw content for mt first article   this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article
-            </p>`
-}  ;
+var articles={  
+    articleOne : {
+        title: 'article one',
+        heading: 'article one',
+        date: 'sep-5-2018',
+        content:`<p>
+                    this is thw content for mt first article   this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article
+                </p>
+                <p>
+                    this is thw content for mt first article   this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article
+                </p>
+                <p>
+                    this is thw content for mt first article   this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article
+                </p>`
+    },
+    articleTwo : {
+         title: 'article one',
+        heading: 'article one',
+        date: 'sep-10-2018',
+        content:`<p>
+                    this is thw content for mt first article   this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article
+                </p>
+                <p>
+                    this is thw content for mt first article   this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article
+                </p>`
+    }
+};
 function createTemplate(data){
     var title=data.title;
     var date=data.date;

@@ -10,11 +10,11 @@ app.get('/', function (req, res) {
 });
 
 app.ger('/article-one',funcation(req,res){
-    res.send('article one requested will be served here')
+    res.send('article one requested will be served here');
 });
 
 app.ger('/article-two',funcation(req,res){
-    res.send('article two requested will be served here')
+    res.send('article two requested will be served here');
 });
 
 app.get('/ui/style.css', function (req, res) {

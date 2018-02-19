@@ -73,7 +73,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/articleName',function(req,res){
+app.get('/:articleName',function(req,res){
     //srticleNmse=article-one
     //srticles[articleName]={} content object for article
     var articleName= req.params.articleName;

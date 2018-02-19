@@ -17,8 +17,8 @@ var articleOne= {
             </p>
             <p>
                 this is thw content for mt first article   this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article this is thw content for mt first article
-            </p>`;
-}   
+            </p>`
+}  ;
 function createTemplate(data){
     var title=data.title;
     var date=data.date;

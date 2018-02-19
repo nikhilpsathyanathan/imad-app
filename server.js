@@ -76,7 +76,7 @@ app.get('/', function (req, res) {
 app.get('/articleName',function(req,res){
     //srticleNmse=article-one
     //srticles[articleName]={} content object for article
-    var articleName= req.pRms.articleName;
+    var articleName= req.prms.articleName;
    res.send(createTemplate(articles[articleName]));
 });
 

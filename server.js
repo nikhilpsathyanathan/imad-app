@@ -9,6 +9,14 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.ger('/article-one',funcation(req,res){
+    res.send('article one requested will be served here')
+});
+
+app.ger('/article-two',funcation(req,res){
+    res.send('article two requested will be served here')
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
